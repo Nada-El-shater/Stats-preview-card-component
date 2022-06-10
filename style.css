@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lexend+Deca&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;  
+    font-size: 15px;        
+    background-color: var(--Very-dark-blue);
+    min-height: 100vh;
+    width: 100vw;    
+}
+:root {
+    --Very-dark-blue: hsl(233, 47%, 7%);
+    --Dark-desaturated-blue: hsl(244, 38%, 16%);
+    --Soft-violet: rgb(170, 92, 219);
+    --White: hsl(0, 0%, 100%);
+    --Slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white2: hsla(0, 0%, 100%, 0.6);
+}
+.card {
+    display: flex;
+    background-color: var(--Dark-desaturated-blue);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.card-img {
+    order: 2;
+}
+.card-img img {
+
+    height: 100%;
+}
+.text-box{
+    padding: 60px;   
+    width: 460px;
+    order: 1;
+}
+.title{
+    font-family: 'Inter', sans-serif;
+    color: var(--White);
+}
+.title span {
+    color:var(--Soft-violet);
+}
+.card .desc {
+   color: var(--Slightly-transparent-white);
+   margin: 30px 0 70px 0;  
+   line-height: 1.7;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+.numbers h2 {
+    color: var(--White);
+}
+.numbers span {
+    color: var(--Slightly-transparent-white2); 
+}
+footer {
+    color: var(--White);
+    margin:20px 0 ;
+}
+
+@media (max-width:786px) {
+    .card {
+        flex-direction: column;
+       max-width: 300px;
+       margin: 50px 0;
+    }   
+    .card-img img{
+       max-width: 300px;
+       order: 1;
+    }
+    .text-box {
+        max-width: 300px;
+        text-align: center;
+        padding: 20px;
+        order: 2;
+    }
+    .card .desc {
+        margin-bottom: 30px;
+    }
+    .numbers{
+        flex-direction: column;
+    }
+    .num {
+        margin-bottom: 20px;
+    }
+    footer {
+        width: 300px;
+        text-align: center;
+    }
+}
