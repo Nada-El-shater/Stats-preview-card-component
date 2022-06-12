@@ -31,10 +31,19 @@ body{
 }
 .card-img {
     order: 2;
+    position: relative;
 }
 .card-img img {
 
     height: 100%;
+}
+.overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(96, 36, 133, 0.63);;
 }
 .text-box{
     padding: 60px;   
